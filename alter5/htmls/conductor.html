@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de Contacto - Script Personal</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+   
+    </style>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+   
+  </head> 
+  
+<body>
+<header><h1>CONDUCTOR</h1></header>
+
+<div id="formulario">
+   <form action="contacto.php" method="post">
+
+    <div class="form-group"> <!-- nombres -->
+        <label for="nombres" class="control-label">Nombres</label>
+        <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres" required>
+    </div> 
+    
+    <div class="form-group"> <!-- apellidos -->
+        <label for="apellidos" class="control-label">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+    </div> 
+    <div class="form-group"> <!--  -->
+        <label for="cel" class="control-label">Celular</label>
+        <input type="text" class="form-control" id="celular" name="celular" placeholder="Celular" required>
+    </div> 
+    
+    <div class="form-group"> <!--  -->
+        <label for="email" class="control-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+    </div> 
+    
+    
+    
+    <br>
+    
+    <div class="form-group"> <!-- -->
+        <label for="departamentoo" class="control-label">Departamento</label> 
+    <select class="form-control" name="departamentos" id="departamentos" required>
+  <option value="0">Seleccione</option>
+</select>
+</div> 
+    
+    
+    <div class="form-group"> <!-- -->
+        <label for="municipio" class="control-label">Ciudad de Mayor Permanencia</label> 
+    <select class="form-control" name="municipio" id="municipio" required>
+  <option value="0">Seleccione</option>
+</select>  
+    </div>  
+
+    <script>
+
+    $(function(){
+
+    // Lista de deprtamentos
+    $.post( 'departamentos.php' ).done( function(respuesta)
+    {
+        $( '#departamentos' ).html( respuesta );
+    });
+
+    // lista de departamentos
+    $('#departamentos').change(function()
+    {
+        var el_continente = $(this).val();
+        
+        // Lista de municipios
+        $.post( 'municipios.php', { continente: el_continente} ).done( function( respuesta )
+        {
+            $( '#municipio' ).html( respuesta );
+        });
+    });
+    
+    // Lista de municipios
+    $( '#municipio' ).change( function()
+    {
+        var municipio = $(this).children('option:selected').html();
+        alert( 'Lista de Municipios de ' + municipio );
+    });
+
+})
+</script> 
+
+                                  
+                            
+        
+    <div class="form-group"> <!--  -->
+        <button type="submit" id="subir" name="subir" value="subir" class="btn btn-primary">ENVIAR</button>
+    </div>
+    
+         
+    
+</form>
+</div>
+</body>
+</html>

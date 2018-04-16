@@ -1,0 +1,104 @@
+/*
+Proyecto: Complete Cargo
+File: 
+Programador: Ing. Fredy Hernández
+Fecha: $date
+*/
+/* 
+    Created on : 06-oct-2017, 6:05:28
+    Author     : fredy.hernandez
+*/
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Geosans Light'), local('GeosansLight'), local('Geosans-Light'),
+        url(../fonts/GeosansLight.eot) format('opentype'),
+        url(../fonts/GeosansLight.ttf) format('truetype'),
+        url(../fonts/GeosansLight.woff) format('woff'),
+        url(../fonts/GeosansLight.svg) format('svg');
+}
+body{
+    font-family:'GeosansLight',Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.body-container{
+    position: relative;
+    /* top:20px;*/
+}
+.nav-bar{
+    float: left;
+    /*border:solid 1px #f44336;*/
+    height: 650px;
+    background-color:  #f0e68c ;
+}
+
+.ulist li a{
+    color:  #000;
+    text-decoration:none;
+}
+.ulist li a:hover{
+        color:  red;
+    text-decoration:none;
+}
+.ulist li:last-child {
+    color: red ;
+}
+button{
+    display: block;
+    width: 130px;
+    
+}
+
+#ul2 li{
+    display: block;
+    text-decoration:none;
+    clear: left;
+}
+#red1, #red2{
+    color: red ;
+}
+#contenido{
+    overflow: hidden;
+    height: 650px;
+   /*border:solid 1px #f44336;*/
+    float: left;
+    position: relative;
+   background-color: #F2F2F2;
+
+}
+#contenido div{
+    top: 0em;
+    border:solid 1px #F2F2F2;
+    height: 650px;
+    margin-left: 20px;
+
+}
+
+#perfil {
+    width: 400px;
+}
+#perfil tr td{
+    width: 200px;
+}
+#publicada tr td, #publicada tr th{
+    width: auto;
+    padding: 0 10px;
+    margin: 0 auto;
+    text-align:center;
+}
+@media only screen and (max-width: 649px) {
+    .nav-bar{
+        width: 100%;
+        height: auto;
+    }
+    #contenido{
+        top: 0px;
+
+    }
+    #contenido div{
+        margin-left: 0px;
+    }
+}

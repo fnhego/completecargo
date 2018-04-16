@@ -1,0 +1,615 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-jul-2017, 23:38:42
+    Author     : fredy.hernandez
+*/
+/* latin */
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Geosans Light'), local('GeosansLight'), local('Geosans-Light'),
+        url(../fonts/GeosansLight.eot) format('opentype'),
+        url(../fonts/GeosansLight.ttf) format('truetype'),
+        url(../fonts/GeosansLight.woff) format('woff'),
+        url(../fonts/GeosansLight.svg) format('svg');
+}
+img
+{
+    vertical-align: middle;
+}
+
+body{
+    font-family:'GeosansLight',Arial, Helvetica, sans-serif;
+    margin: 0px;
+    min-width: 360px;
+    font-size: 16px;
+    padding: 0px;
+
+
+}
+.wrapper {
+    /*width: 1140px; /* 1140px - 5% for margins */
+    /*border: solid 1px #000;*/
+    width: 97%;
+    margin-left: 1.5%;
+    max-width: 1360px;
+}
+.header-container {
+    /*border: solid 2px brown;*/
+    margin: 0px auto;
+}
+
+nav {
+    position: relative;
+}
+
+.menu li{
+
+    display:block; /*Elimina puntos*/
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.menu li a:active, 
+.menu li a:hover {
+    color:red;
+    /* background:blue; /*#00B895*/
+}
+.menu li a, botones a{
+    /*color: black;*/
+    /* position: relative; */
+    -webkit-transition: 0.5s ease;
+}
+.iniciar{
+    color: blue;
+    font-weight: bold;
+}
+.dropbtn{
+    color: black;
+}
+/*Color negro del sunmenu*/
+.registrar li a{
+    color: black;
+}
+.color_negro{
+    color: black;
+}
+/* Sub Menus  para que no lo muestre*/
+/*.menu li ul */
+
+ul.sub{
+    position: absolute;
+    z-index: 200;
+    /*width: inherit;*/
+    box-shadow: 2px 2px 0 #BEBEBE;
+    /*padding-left: 0px;*/
+
+    display: none;
+}
+/*ul.sub {
+  position: absolute;
+  z-index: 200;
+  box-shadow: 2px 2px 0 #BEBEBE;
+ /* width: 20%;*/
+/* display:none;
+}*/
+/* Muestra el submenu*/
+.menu li:hover ul {
+    display: block;
+    background-color: #F2F2F2;
+}
+.central-container{
+    margin: 0px auto;
+    /*border: solid 1px #000;*/
+    padding: 0px;
+}
+
+div#img{
+    /*border: solid 1px #000;*/
+    text-align: center;
+    max-height: 554px;
+    /*width: auto;
+    width: 100%;*/
+    height: auto;
+}
+.label-container1{
+    /* border: solid 1px red;*/
+    position: absolute;
+    float: left;
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 69%;
+    /* top:250px;*/
+}
+.label-container2{
+    /*border: solid 1px #000;*/
+    position: absolute ;
+    float: left;
+    width: 52%;
+    margin-top: 15%;
+    margin-left: 29%;
+}
+.label1{
+    /*border: solid 1px #000;*/
+    color: blue;
+    text-align: right;
+}
+.label2{
+    /* border: solid 1px red;*/
+    color: white;
+    text-align: left;
+}
+
+img#main{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    /*border: solid 2px red*/
+    /*display: block;*/
+    z-index: -1;
+
+}
+.botones{
+
+    font-size: 2vw;
+    display: inline-block;
+    z-index: 1;
+    left:0%;
+    /*border: solid 1px #000;*/
+}
+.botones a:link, .botones a:visited{
+    background-color: chartreuse  ;/*#BAD6FE*/
+    /*border-style: solid;*/
+    color: #000000;
+    font-weight: bold;
+    padding: 0.2em;
+    opacity: 0.8;
+    border-radius: 0.5em;
+    /*border-color: black;*/
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.botones a:hover,
+.botones a:active { 
+    color: red;
+}   
+h1  {
+    color: #000;
+    font-weight: bold;
+}
+.text-center{
+    /*position: relative;*/
+    width: 97%;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    /*border: solid 1px #ccc;*/
+}
+a{
+    text-decoration:none;
+    /*font-weight: bold;*/
+}
+section{
+    padding: 2%;
+    text-align: justify;
+}
+.negrita{
+    font-weight: bold;
+}
+section#section{
+    background-color: #F2F2F2;
+}
+section h1{
+    color: blue;
+}
+
+/*div#text{
+    text-align: center;
+}*/
+.cuerpo{
+    /*border: solid 0px #ccc;*/
+    margin: 0px auto;
+}
+.central{
+
+}
+.central div{
+    padding: 1%;
+}
+.central div h1{
+    text-align: center;
+    color: blue;
+}
+.central div p{
+    text-align: center;
+    /*display: inline-block;*/
+}
+.central p, section p, section li{
+    font-size: 20px;
+}
+.central div p {
+    text-align: center;
+}
+.central div div {
+    margin: auto;
+    /*position: relative;*/
+}
+.central img{
+    width: 60px;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cuadro {
+    text-align: center;
+}
+.footer{
+    background-color: #F2F2F2;
+    font-weight: bold;
+    color: #215968;
+    margin: 0px auto;
+
+}
+.lista li a{
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2em;
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.lista li a:hover, 
+.lista li a:active{
+    color: red;
+
+}
+
+/* Activa el color rojo cuando se pasa el mouse*/
+.redes a:hover,
+.redes a:active{
+    background-color: red;
+}
+@media only screen and (min-width: 320px) {
+
+
+    .logo{
+        margin: auto;
+        /*border: solid cyan;*/
+        height:50px;
+        width: auto;
+        /*border: solid 1px #000;*/
+    }
+    .menu li{
+        font-size: 20px;
+        text-align: center;
+        /*border: solid cyan;*/
+    }
+    /* Sub Menus */
+    .menu li ul li a {
+        font-size: 18px;
+    }
+
+    .body-container{
+        width: 97%;
+        margin-left: 1.5%;
+    }
+    .central-container{
+        display: block;
+        left: 1.5%;
+    }
+    .label-container1{
+        margin-left: 65%;
+    }
+    .label1{
+        /* border: solid 1px orange;*/
+        height: 10vw;
+        font-size: 2.2vw;
+    }
+    .label2{
+        /* border: solid 1px red;*/
+        height: 8vw;
+        font-size: 1.8vw;
+    }
+    .botones{
+        position: relative;
+        left:37%;
+        top: -16vw;
+        float: left;
+        /* border: solid 1px red;*/
+    }
+    .botones a{
+        /*border: 2px black;*/
+
+        /*border: solid 1px #000;*/
+    }
+    .central div  {
+        text-align: center;
+    } 
+    cuadro{
+        left: 30%;
+    }
+    .footer{
+        padding-left: 5%;
+    }
+    .redes{
+        text-align: center;
+    }
+    .redes a{
+        position: relative;
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 450px) {
+
+    /* ===============
+         Maximal Width 450
+      =============== */
+
+    /*
+          .botones{
+            top: 325px;
+    }*/
+}
+@media only screen and (min-width: 550px) {
+
+    /* ===============
+         Maximal Width 550
+      =============== */
+    /*  .menu li{
+          font-size: 20px;
+          /*text-align: center;*/
+    /*border: solid cyan;*/
+    /*  }
+      /* Sub Menus */
+    .menu li li {
+        font-size: 15px;
+    }
+    /*Alineacion sub menu*/
+    .menu li ul li{
+        text-align: center;
+        /* border: solid yellow;*/
+    }
+    /*   .botones{
+             top: 335px;
+        }*/
+}
+
+@media all and (min-width: 650px) {
+
+    .header-container {
+        left: 1.5%;
+        top: 0px;
+        height: 65px;
+        position: fixed;
+        z-index:100;
+        background-color: #F2F2F2;
+    }
+    .body-container{
+        position: absolute;
+        top: 65px;
+    }
+    .logo-container{
+        /*border: solid 1px brown;*/
+        float: left;
+        width: 107px;
+    }
+    .logo{
+        height:65px;
+        width: auto;
+        /*border: solid 1px #000;*/
+    }
+    /*Posicion barra de menu*/
+    .top-nav{
+        /*border: solid 2px cyan;*/
+        float: right;
+        /*z-index: 100;*/
+    }
+    .menu li{
+        display: inline-block; /*Muestra el menu horizontal*/
+        vertical-align: top;
+        /*border: solid cyan;*/
+    }
+    /*Fuente Menu*/
+    .menu li a{
+        font-size: 2.2vw;
+        padding: 0.5vw; ; /*Margenes*/
+    }
+    /*Alineacion sub menu*/
+    .menu li ul li{
+        text-align: left;
+        display: block;
+        /* border: solid yellow;*/
+    }
+    /*Tamaño fuente submenu*/
+    .menu  li ul  li  a {
+        font-size: 1.7vw;;
+    }
+
+    .label1{
+        /*border: solid 1px #000;*/
+        height: 10vw;
+        top: 1vw;
+        font-size: 2.2vw;
+    }
+    .label2{
+        /* border: solid 1px red;*/
+        height: 8vw;
+        top: 15vw;
+        font-size: 1.8vw;
+    }
+    .botones{
+        /* border: 2px black;*/
+        top: -15vw;
+        float: left;
+    }
+    .central{
+        display: inline-block; 
+    }
+    .central div{
+        width: 22%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 1%
+    }
+    .central div div {
+        margin: auto;
+        /*left: 45%;*/
+    }
+    .central div p {
+        text-align: center;
+        /*left: 45%;*/
+    }
+
+}
+
+@media only screen and (min-width: 750px) {
+
+    /* ===============
+         Minimal Width 750
+      =============== */
+
+    /*Tamaño fuente menu*/
+    /*  .menu li a{
+          font-size: 24px;/*1.15em*/
+    /*   padding: 7px ; /*Margenes
+   }
+   /*Tamaño fuente submenu*/
+    /*  .menu  li ul  li  a {
+          font-size: 19px;
+      }
+      /*.menu li ul li {
+           display: block;
+       }*/
+
+
+    /*
+    .header-text p{ 
+        padding: 10px ;
+    }
+    /*  .botones{
+          font-size: 1.4em;
+          top: -8.5em;
+          left: 4%;
+      }
+    
+    }*/
+    /*   .central div div {
+           margin: auto;
+           /*left: 40%;*/
+    /*   }  */
+
+}
+
+
+@media only screen and (min-width: 950px) {
+
+    /* ===============
+         Maximal Width 950
+      =============== */
+    /*Tamaño fuente menu*/
+
+
+    /*   .botones{
+           font-size: 1.7em;
+           top: -8.2em;
+           left: 4%;
+       }*/
+    /* .botones a{
+         font-size: 1em ;
+     }*/
+    .cuadro{
+        /*width: 12%;*/
+        vetical-align: top;
+        width: 50px;
+       height: 50px;
+    }
+    .cuadro cuadro{
+        position: relative;
+        top: 0px;
+
+    }
+    .footer-dv{
+        padding: 2%;
+        width: 42%;
+        font-size: 1em;
+        /* border: solid 1px #ccc;*/
+    }
+    .footer div{
+        display: inline-block;
+    }
+    .redes a{
+        display: block;
+        /*padding: 10px;*/
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+
+    /* ===============
+         Maximal Width 1150
+      =============== */
+
+
+
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0000);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+/*
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+*/

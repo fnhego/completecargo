@@ -1,0 +1,678 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-jul-2017, 23:38:42
+    Author     : fredy.hernandez
+*/
+/* latin */
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Geosans Light'), local('GeosansLight'), local('Geosans-Light'),
+        url(../fonts/GeosansLight.eot) format('opentype'),
+        url(../fonts/GeosansLight.ttf) format('truetype'),
+        url(../fonts/GeosansLight.woff) format('woff'),
+        url(../fonts/GeosansLight.svg) format('svg');
+}
+img
+{
+    vertical-align: middle;
+}
+
+body{
+    font-family:'GeosansLight',Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.main-container{
+   margin: 0 auto;
+   width: 97%;
+   max-width: 1320px;
+   position: relative;
+}
+.wrapper {
+    /*width: 1140px; /* 1140px - 5% for margins */
+    /*border: solid 1px #000;*/
+     width: 100%;
+     max-width: 1320px;
+     margin: 0 auto;
+}
+.header-container {
+    /*border: solid 2px brown;*/
+    margin: 0px auto;
+    width: 97%;
+    max-width: 1320px;
+}
+
+.logo-container{
+    float: left;
+    position: relative;
+}
+.top-nav {
+    /*border: solid 1px brown;*/
+    position: relative;
+}
+.menu li{
+    display:block; /*Elimina puntos*/
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.menu li a:active, 
+.menu li a:hover {
+    color:red;
+    text-decoration:none;
+    /* background:blue; /*#00B895*/
+}
+.menu li a, botones a{
+    /*color: black;*/
+    /* position: relative; */
+    -webkit-transition: 0.5s ease;
+}
+.iniciar{
+    color: blue;
+    font-weight: bold;
+}
+.dropbtn{
+    color: black;
+}
+/*Color negro del sunmenu*/
+.registrar li a{
+    color: black;
+}
+.color_negro{
+    color: black;
+}
+/* Sub Menus  para que no lo muestre*/
+/*.menu li ul */
+
+ul.sub{
+    position: absolute;
+    z-index: 200;
+    /*width: inherit;*/
+    box-shadow: 2px 2px 0 #BEBEBE;
+    /*padding-left: 0px;*/
+    display: none;
+}
+/* Muestra el submenu*/
+.menu li:hover ul {
+    display: block;
+    background-color: #F2F2F2;
+}
+.body-container{
+    width: 100%;
+    }
+.central-container{
+    /*border: solid 1px #000;*/
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+}
+div#img{
+    /*border: solid 1px #000;*/
+    text-align: center;
+    position: relative;
+}
+.label-container1{
+    /* border: solid 1px red;*/
+    position: absolute;
+    float: left;
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 69%;
+    
+}
+.label-container2{
+    /*border: solid 1px #000;*/
+    position: absolute ;
+    float: left;
+    width: 52%;
+    margin-top: 15%;
+    margin-left: 29%;
+}
+.label1{
+    /*border: solid 1px #000;*/
+    color: blue;
+    text-align: right;
+}
+.label2{
+    /* border: solid 1px red;*/
+    color: white;
+    text-align: left;
+}
+img#main{
+    /*border: solid 1px red;*/
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.botones{
+    float: left;
+    display: inline-block;
+    z-index: 1;
+    /*border: solid 1px #000;*/
+}
+.botones a:link, .botones a:visited{
+    background-color: chartreuse  ;/*#BAD6FE*/
+    /*border-style: solid;*/
+    color: #000000;
+    font-weight: bold;
+    padding: 0.2em;
+    opacity: 0.8;
+    border-radius: 0.5em;
+    /*border-color: black;*/
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.botones a:hover,
+.botones a:active { 
+    color: red;
+}   
+
+.form-container{
+    height: 555px;/*561*/
+    background-image: url("../img/fondo_blue_color.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    /*background-attachment: fixed;*/ /* Fija la imagen al fondo no se mueve la imagen, solo la ventana*/
+    background-size:  cover ;
+    /*text-align: center;*/
+    z-index: -1;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+#formulario {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#FFFFFF;/*#F0EFEF*/
+    padding: 10px 30px;
+    border-radius: 6px;
+    border:thin #C1C1C1;
+    color: black;
+    position: relative;
+     top: 0px;
+    opacity:0.8;
+}
+.form-group{
+    width:100%;
+    /*border: solid 1px #000;*/
+    margin: 0px auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+}
+#capa{
+    margin: 0px auto;
+    padding: 0px;
+}
+#empresa{
+    position: relative;
+    bottom: -5px;
+}
+.form-group div{
+    /* padding-left: 0px;*/
+    width: 250px;
+    margin: 0px auto;
+}
+form-control{
+    margin: 0px auto;
+    bottom: 0px;
+}
+.form-group h2{
+    text-align: center;
+    font-weight: bold;
+    margin: 0px auto;
+}
+input:invalid {
+    border: 1px solid red;
+}
+select:invalid {
+    border: 1px solid red;
+}
+.h2  {
+    color: blue;
+    font-weight: bold;
+}
+.text-center{
+    /*position: relative;*/
+    width: 97%;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    /*border: solid 1px #ccc;*/
+}
+a{
+    text-decoration:none;
+    /*font-weight: bold;*/
+}
+section{
+    padding: 2%;
+    text-align: justify;
+}
+.negrita{
+    font-weight: bold;
+}
+section#section{
+    background-color: #F2F2F2;
+}/*
+section h1{
+    color: blue;
+}*/
+
+/*div#text{
+    text-align: center;
+}*/
+.cuerpo{
+    /*border: solid 0px #ccc;*/
+    margin: 0px auto;
+}
+.central{
+
+}
+.central div{
+    text-align: center;
+}
+.central div h1{
+    text-align: center;
+    color: blue;
+}
+.central div p{
+    text-align: center;
+    /*display: inline-block;*/
+}
+.central p, section p, section li{
+    font-size: 18px;
+}
+.central div p {
+    text-align: center;
+}
+.central div div {
+    margin: auto;
+    /*position: relative;*/
+}
+.central img{
+    width: 60px;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cuadro {
+    text-align: center;
+}
+.footer{
+    background-color: #F2F2F2;
+    font-weight: bold;
+    color: #215968;
+    margin: 0px auto;
+
+}
+.lista li a{
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2em;
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.lista li a:hover, 
+.lista li a:active{
+    color: red;
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.redes a:hover,
+.redes a:active{
+    background-color: red;
+}
+@media only screen and (max-width: 649px) {
+
+
+    .header-container{
+        position: relative;
+    }
+    .logo-container{
+        position: relative;
+        width: 100%;
+    }
+    .top-nav{
+       /* clear: left;*/
+        width: 100%;
+    }
+    .logo{
+        /*border: solid cyan;*/
+        margin: 0 auto;
+        height:50px;
+        width: auto;
+    }
+    .menu li{
+        /*border: solid cyan;*/
+        font-size: 20px;
+        text-align: center;
+   }
+    /* Sub Menus */
+    .menu li ul li a {
+        font-size: 18px;
+    }
+    .body-container{
+        position: relative;
+    }
+    .central-container{
+        display: block;
+        /*left: 1.5%;*/
+    }
+    .label-container1{
+        margin-left: 65%;
+    }
+    .label1{
+        /* border: solid 1px orange;*/
+        height: 20px;/*10vw*/
+        font-size: 2.2vw;
+    }
+    .label2{
+        /* border: solid 1px red;*/
+        height: 8vw;
+        font-size: 1.8vw;
+    }
+    .botones{
+        position: relative;
+        left:34%;
+        top: -16vw;
+        font-size: 2.4vw;
+         /* border: solid 1px red;*/
+    }
+    .central div  {
+        text-align: center;
+    } 
+    cuadro{
+        left: 30%;
+    }
+    .footer{
+        padding-left: 5%;
+    }
+    .redes{
+        text-align: center;
+    }
+    .redes a{
+        position: relative;
+        display: inline-block;
+    }
+}
+/*@media only screen and (min-width: 450px) {
+
+    /* ===============
+         Maximal Width 450
+      =============== */
+
+/*
+      .botones{
+        top: 325px;
+}*/
+/*}
+@media only screen and (min-width: 550px) {
+
+    /* ===============
+         Maximal Width 550
+      =============== */
+/*  .menu li{
+      font-size: 20px;
+      /*text-align: center;*/
+/*border: solid cyan;*/
+/*  }
+  /* Sub Menus */
+/* .menu li li {
+     font-size: 15px;
+ }
+ /*Alineacion sub menu*/
+/* .menu li ul li{
+     text-align: center;
+     /* border: solid yellow;*/
+/* }
+ /*   .botones{
+          top: 335px;
+     }*/
+/*}*/
+
+@media only screen and (min-width: 650px) {
+
+    .header-container {
+        height: 50px;
+        /* border: solid 1px brown;*/
+        position: fixed; 
+        z-index:100;
+        background-color: #F2F2F2;
+    }
+    .logo-container{
+        /*border: solid 1px brown;*/
+        width: 5%;
+        height: 50px;
+        padding-right: 1%;
+        position: relative;
+    }
+    .logo{
+        height:50px;
+        width: auto;
+        margin: 0 auto;
+        /*border: solid 1px #000;*/
+    }
+    /*Posicion barra de menu*/
+    .top-nav{
+        /*border: solid 1px cyan;*/
+        float: right;
+        width: 90%;
+        height: 50px;
+        vertical-align: middle;
+        /*position: relative;*/
+        /*z-index: 100;*/
+    }
+    .menu{
+        /*border: solid 1px #000;*/
+        margin: 10px;
+        float: right;
+        position: relative;
+        vertical-align: middle;
+    }
+    .menu li{
+        /*border: solid cyan;*/
+        display: inline-block; /*Muestra el menu horizontal*/
+        vertical-align: top;
+
+    }
+    /*Fuente Menu*/
+    .menu li a{
+        font-size: 25px;
+        padding-right: 5px; ; /*Margenes*/
+    }
+    /*Alineacion sub menu*/
+    .menu li ul li{
+        text-align: left;
+        display: block;
+        /* border: solid yellow;*/
+    }
+    /*Tamaño fuente submenu*/
+    .menu  li ul  li  a {
+        font-size: 1.7vw;;
+    }
+    .body-container{
+        position: absolute;
+        top: 50px;
+    }
+    .label1{
+        /*border: solid 1px #000;*/
+        height: 10vw;
+        top: 1vw;
+        font-size: 2.2vw;
+    }
+    .label2{
+        /* border: solid 1px red;*/
+        height: 8vw;
+        top: 15vw;
+        font-size: 1.8vw;
+    }
+    .botones{
+        left: 37%;
+        bottom:  12vw;
+        float: left;
+        font-size: 2vw; 
+        position: absolute;
+    }
+    .central{
+        display: inline-block; 
+    }
+    .central div{
+        width: 22%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 1%
+    }
+    .central div div {
+        margin: auto;
+        /*left: 45%;*/
+    }
+    .central div p {
+        text-align: center;
+        /*left: 45%;*/
+    }
+
+}
+
+@media only screen and (min-width: 750px) {
+
+    /* ===============
+         Minimal Width 750
+      =============== */
+
+    /*Tamaño fuente menu*/
+    /*  .menu li a{
+          font-size: 24px;/*1.15em*/
+    /*   padding: 7px ; /*Margenes
+   }
+   /*Tamaño fuente submenu*/
+    /*  .menu  li ul  li  a {
+          font-size: 19px;
+      }
+      /*.menu li ul li {
+           display: block;
+       }*/
+
+
+    /*
+    .header-text p{ 
+        padding: 10px ;
+    }
+    /*  .botones{
+          font-size: 1.4em;
+          top: -8.5em;
+          left: 4%;
+      }
+    
+    }*/
+    /*   .central div div {
+           margin: auto;
+           /*left: 40%;*/
+    /*   }  */
+
+}
+
+
+@media only screen and (min-width: 950px) {
+
+    /* ===============
+         Maximal Width 950
+      =============== */
+    /*Tamaño fuente menu*/
+
+    .cuadro{
+        width: 12%;
+        display: inline-block;
+        padding: 2%;
+        vertical-align: top;
+    }
+    .cuadro cuadro{
+        position: relative;
+        top: 0px;
+  }
+    .footer-dv{
+        padding: 2%;
+        width: 42%;
+        font-size: 1em;
+        /* border: solid 1px #ccc;*/
+    }
+    .footer div{
+        display: inline-block;
+    }
+    .redes a{
+        display: block;
+        /*padding: 10px;*/
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+
+    /* ===============
+         Maximal Width 1150
+      =============== */
+   
+
+
+
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0000);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+/*
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+*/

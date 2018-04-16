@@ -1,0 +1,31 @@
+/*
+Proyecto: Complete Cargo
+File: 
+Programador: Ing. Fredy Hernández
+Fecha: $date
+*/
+/* 
+    Created on : 27-sep-2017, 23:17:13
+    Author     : fredy.hernandez
+*/
+
+html, body {
+   margin: 0;
+   padding: 0;
+}
+#outer {
+   margin: 5em;
+   border: 1px solid #f00;
+   height: 4em;
+   position: static;
+
+}
+#inner {
+   width: 50%;
+   height: 50%;
+   background-color: #999;
+   position: absolute;
+   left: 1em;
+
+
+}

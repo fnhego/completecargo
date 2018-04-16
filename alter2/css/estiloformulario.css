@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-jul-2017, 23:38:42
+    Author     : fredy.hernandez
+*/
+html  {
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+img#logo {
+    width: 60%;
+    height: auto;
+}
+img#main {
+    width: 100%;
+    height: auto;
+}
+header {
+    border: solid 0px #ccc;
+    height: 100%;
+    background-color: #1f5abe;
+}
+
+h1  {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+li {
+    display: inline; /*hace que el menu sea horizontal*/
+    padding: 4px;
+    color: #ccc;
+}
+
+form{
+    border: solid 0px #ccc;
+    font-size: 1.8em;
+    /*alignment-adjust: central ; */
+
+
+}
+input{
+    padding: 5px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    display: inline-block;
+}
+select{
+    font-size: 1.5em;
+}
+
+table#formulario {
+    border: solid 0px #ccc;
+    text-align: left;
+    font-size: 120%;
+    padding: 10px;
+}
+table#header {
+    width: 100%;
+    height: auto;
+
+}
+tr, td{
+}
+
+td#headercontainer{
+    width: 25%;
+}
+div#logocontainer {
+    border: solid 0px #ccc;
+    height: 100%;
+    padding: 1%;
+}
+div#label {
+    border: solid 0px #ccc;
+    float: outside;
+    height: auto;
+    position: relative;
+    text-align: right;
+    right: 0px;
+}
+label#rotulo {
+    border: solid 0px #ccc;
+    position: relative;
+    font: normal 1.4em arial,helvetica,sans-serif;
+    width: 100%;
+}
+
+
+
+
+
+

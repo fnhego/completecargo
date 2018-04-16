@@ -1,0 +1,487 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-jul-2017, 23:38:42
+    Author     : fredy.hernandez
+*/
+img
+{
+    vertical-align: middle;
+}
+html  {
+
+    overflow-x:hidden;
+}
+body{
+    font-family:'Oswald',Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-width: 360px;
+    font-size: 16px;
+}
+.wrapper {
+    /*width: 1140px; /* 1140px - 5% for margins */
+    margin: 0px auto;
+    width: 97%;
+}
+.top-nav{
+    text-align: center;
+    /*border: solid cyan;*/
+    /*display: -webkit-flex;*/
+}
+.top-nav ul li{
+    display:block; /*Elimina puntos*/
+    /* align-content: center;*/
+    /*border: solid cyan;*/
+}
+/*nav a:hover,
+nav a:visited { /*visited para que no cambie el color
+    color: black;
+}*/
+/* Activa el color rojo cuando se pasa el mouse*/
+.top-nav li a:active, 
+.top-nav li a:hover {
+    color:red;
+    /* background:blue; /*#00B895*/
+}
+.top-nav ul li a, botones a{
+    /*color: black;*/
+    /* position: relative; */
+    -webkit-transition: 0.5s ease;
+}
+.nav li ul li {
+    display: block;
+}
+
+/*.show {/*display:block;}*/
+.iniciar{
+    color: blue;
+    font-weight: bold;
+}
+.dropbtn{
+    color: black;
+}
+/*.registrar {
+        color:black;
+      
+    }*/
+.registrar li{
+    text-align: left;
+}
+.registrar li a{
+    color: black;
+}
+.color_negro{
+    color: black;
+}
+
+/* Sub Menus */
+.top-nav li ul {
+    position: initial;
+    display: none;
+    width: inherit;
+    padding-left: 0px;
+}
+/* Muestra el submenu*/
+.top-nav li:hover ul {
+    display: block;
+}
+
+.header-text{
+    font-weight: bold;
+}
+img#main {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+h1  {
+    color: #000;
+    font-weight: bold;
+}
+p#p1{
+    /*border: solid 0px #000;*/
+    width: 100%;
+    position: absolute;
+    float: inside;
+    right: 2%;
+    color: blue;
+    text-align: right;
+    font-size:1.2em;
+}
+a{
+    text-decoration:none;
+    /*font-weight: bold;*/
+}
+section{
+    padding: 2%;
+    text-align: justify;
+}
+.negrita{
+    font-weight: bold;
+}
+section#section{
+    background-color: #F2F2F2;
+}
+section h1{
+    color: blue;
+}
+.central-container{
+    /*border: solid 2px #000;*/
+}
+div#text{
+    text-align: center;
+}
+div#img{
+   /* position: relative;*/
+   text-align: center;
+    z-index: -1;
+    /*border: solid 2px red;*/
+   /* max-height: 561px;*/
+}
+img#main{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+.botones{
+    /*float: inside;*/
+    position: relative;
+    /*margin: auto;*/
+    /*left: 0em;
+    top:0em;*/
+    z-index: 1;
+    
+    /*border: solid 1px #000;*/
+}
+.botones a:link, .botones a:visited{
+    background-color: blue;
+    border-style: solid;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0.5em;
+    opacity: 1;
+    border-radius: 0.5em;
+    border-color: black;
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.botones a:hover,
+.botones a:active { 
+    color: red;
+}
+.cuerpo{
+    /*border: solid 0px #ccc;*/
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.central{
+    width: 98%;
+}
+.central div{
+    padding: 1%;
+}
+.central div h1{
+    text-align: center;
+    color: blue;
+}
+.central div p{
+    text-align: center;
+    /*display: inline-block;*/
+}
+.central p, section p, section li{
+    font-size: 20px;
+}
+.central div p {
+    text-align: center;
+}
+.central div div {
+    margin: auto;
+    /*position: relative;*/
+}
+.central img{
+    width: 60px;
+}
+.cuadro {
+    text-align: center;
+}
+
+.footer{
+    background-color: #F2F2F2;
+    font-weight: bold;
+    color: #215968;
+    width: 100%;
+}
+footer-container{
+    width: 98%;
+}
+.lista li a{
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2em;
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.lista li a:hover, 
+.lista li a:active{
+    color: red;
+}
+
+
+@media all and (min-width: 320px) {
+
+    .logo-container{
+        /*border: solid 2px brown;*/
+        width: 97%;
+    }
+    .logo{
+        margin: auto;
+        /*border: solid cyan;*/
+    }
+    p#p1{
+        font-size: 1em;
+        line-height: 1.8em;
+    }
+  .top-nav ul li{
+        font-size: 1.2em;
+        /*border: solid cyan;*/
+     }
+     /* Sub Menus */
+    .top-nav li li {
+        font-size: 0.8em;
+    }
+    /*Alineacion sub menu*/
+    .top-nav div nav ul li ul li{
+        text-align: center;
+        margin: auto;
+        /* border: solid yellow;*/
+    }
+    .top-nav div nav ul li ul li a{
+       /* border: solid red;*/
+    }
+    .header-text{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .central div  {
+       text-align: center;
+    } 
+    cuadro{
+        left: 30%;
+    }
+    .botones{
+        top: -4em; 
+        font-size: 0.9em;
+    }
+    .redes{
+        left: 20px
+    }
+}
+
+@media only screen and (min-width: 650px) {
+
+    .header-container {
+        /* border: solid 2px brown;*/
+        width: 97%; 
+        height: auto;
+    }
+    .logo-container{
+        /*border: solid 2px brown;*/
+        float: left;
+        width: 18%;
+    }
+    .logo{
+        height: 112px;
+        width: 154px;
+    }
+    .top-nav{
+        float: right;
+    }
+     .top-nav ul li{
+        display: inline-block; /*Muestra el menu horizontal*/
+        vertical-align: top;
+    }
+    .top-nav ul li a{
+        font-size: 1em;
+    }
+    .top-nav > ul > li > a {
+        padding-left: -0px;
+    }
+    .header-text{
+        /*border: solid cyan;*/
+        font-size: 0.9em;
+        float: right;
+    }
+    .header-text p{ 
+        padding: 10px ;
+        margin: 0px;
+        font-weight: bold;
+    }
+    .central
+    {
+        padding: 2%
+    }
+    .central div div {
+        margin: auto;
+        /*left: 45%;*/
+    }
+    .central div p {
+        text-align: center;
+        /*left: 45%;*/
+    }
+    .botones{
+        /* border: 2px black;*/
+        top: -10em; 
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+
+    /* ===============
+         Maximal Width 1140
+      =============== */
+
+    .logo{
+        height: 125px;
+        width: 171px;
+    }
+    .top-nav ul li a{
+        font-size: 1.15em;
+        padding: 7px ; /*Margenes*/
+    }
+    .top-nav li ul li {
+        display: block;
+    }
+    .header-text{
+        /*border: solid cyan;*/
+        font-size: 1.2em;
+    }
+    /* Sub Menus */
+    .top-nav li li {
+        font-size: 0.8em;
+    }
+    .header-text p{ 
+        padding: 10px ;
+    }
+    .central div{
+        width: 22%;
+        display: inline-block;
+        vertical-align: top;
+    }
+ /*   .central div div {
+        margin: auto;
+        /*left: 40%;*/
+ /*   }  */
+    .botones{
+        top: -9em; 
+    }
+}
+
+
+@media only screen and (min-width: 950px) {
+
+    /* ===============
+         Maximal Width 1140
+      =============== */
+
+    .logo-container{
+        width: 18%;
+    }
+    .logo{
+        height: 139px;
+        width: 190px;
+    }
+    .top-nav ul li a{
+        font-size: 1.5em;
+    }
+
+    .header-text{
+        /*border: solid cyan;*/
+        font-size: 1.6em;
+
+    }
+    .botones{
+      top: -7em;
+        font-size: 2em;
+    }
+    .botones a{
+        font-size: 1em ;
+    }
+    .cuadro{
+        width: 12%;
+        display: inline-block;
+        padding: 2%;
+        vertical-align: top;
+    }
+    .cuadro cuadro{
+        position: relative;
+        top: 0px;
+
+    }
+
+
+    .footer-dv{
+        padding: 2%;
+        width: 42%;
+        font-size: 1em;
+        /* border: solid 1px #ccc;*/
+    }
+    .footer div{
+        display: inline-block;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0000);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+

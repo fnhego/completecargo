@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'GeosansLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Geosans Light'), local('GeosansLight'), local('Geosans-Light'),
+        url(../fonts/GeosansLight.eot) format('opentype'),
+        url(../fonts/GeosansLight.ttf) format('truetype'),
+        url(../fonts/GeosansLight.woff) format('woff'),
+        url(../fonts/GeosansLight.svg) format('svg');
+}
+
+body{
+    font-family:'GeosansLight',Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-width: 360px;
+    font-size: 16px;
+}
+.navbar{
+    background-color: #F2F2F2;
+}
+.navbar-brand img{
+    position: absolute;
+    top: 3px;
+    left: 0%;
+}
+.nav li a{
+    /*color: #000000;*/
+    font-size: 20px;
+    font-weight: bold;
+}
+.active{
+   color: #000000; 
+}
+.iniciar a{
+    /*background-color:#009688;*/
+    color: blue;
+}
+.dropdown-menu{
+    background-color: #F2F2F2;
+    color: blue;
+}
+.dropdown-menu li a{
+    font-size: 16px;
+}
+.form-container{
+    height: 600px;/*561*/
+    background-image: url("../img/fondo_blue.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:  cover ;
+    /*text-align: center;*/
+    z-index: -1;
+    overflow-y: scroll;
+}
+.body-container{
+    position: relative  ;
+    top: 50px;
+    
+}
+#formulario {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#FFFFFF;/*#F0EFEF*/
+    padding: 10px 30px;
+    border-radius: 6px;
+    border:thin #C1C1C1;
+    color: black;
+    /* position: relative;
+     top: 0px;*/
+    opacity:0.8;
+}
+.form-group{
+    width:100%;
+    /*border: solid 1px #000;*/
+    margin: 0px auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+}
+#capa{
+    margin: 0px auto;
+    padding: 0px;
+}
+#empresa{
+    position: relative;
+    bottom: -5px;
+}
+.form-group div{
+    /* padding-left: 0px;*/
+    width: 250px;
+    margin: 0px auto;
+}
+
+form-control{
+    margin: 0px auto;
+    bottom: 0px;
+}
+.form-group h2{
+    text-align: center;
+    font-weight: bold;
+    margin: 0px auto;
+}
+input:invalid {
+    border: 1px solid red;
+}
+select:invalid {
+    border: 1px solid red;
+}
+.wrapper {
+    /*width: 1140px; /* 1140px - 5% for margins */
+    margin: 0px auto;
+    width: 97%;
+}
+.logo-container{
+    /*border: solid 2px brown;*/
+    float: left;
+    width: 18%;
+}
+.logo{
+    height: 78px;
+    width: 107px;
+}
+#mensaje{
+    height: 100px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0px;
+    /*width: 100%;*/
+}
+.footer{
+    background-color: #F2F2F2;
+    font-weight: bold;
+    color: #215968;
+    width: 100%;
+}
+.lista li a{
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2em;
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.lista li a:hover, 
+.lista li a:active{
+    color: red;
+    
+}
+.redes a{
+    display: block;
+    padding: 10px;
+}
+/* Activa el color rojo cuando se pasa el mouse*/
+.redes a:hover,
+.redes a:active{
+    background-color: red;
+}
+
+@media only screen and (min-width: 320px) {
+
+
+    
+}
+@media only screen and (min-width: 450px) {
+
+    /* ===============
+         Maximal Width 450
+      =============== */
+
+
+    
+}
+@media only screen and (min-width: 550px) {
+
+    /* ===============
+         Maximal Width 550
+      =============== */
+ 
+}
+@media only screen and (min-width: 950px) {
+
+    /* ===============
+         Maximal Width 950
+      =============== */
+    /*Tamaño fuente menu*/
+    
+    .footer-dv{
+        padding: 2%;
+        width: 42%;
+        font-size: 1em;
+        /* border: solid 1px #ccc;*/
+    }
+    .footer div{
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+
+    /* ===============
+         Maximal Width 1150
+      =============== */
+
+
+   
+}
+

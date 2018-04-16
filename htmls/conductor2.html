@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de Contacto - Script Personal</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+   
+    </style>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+   
+  </head> 
+  
+<body>
+<header><h1>DATOS DEL CONDUCTOR</h1></header>
+
+<div id="formulario">
+   <form action="contacto.php" method="post">
+
+    <div class="form-group"> <!-- nombres -->
+        <label for="docu" class="control-label">Tipo de Documento</label>
+        <select class="form-control" name="docu" id="docu" required>
+  <option value="0">Seleccione</option>
+  <option value="CC">Cedula</option>
+  <option value="NIT">Nit</option>
+  <option value="CE">Cedula Extrangeria</option>
+  <option value="PA">Pasaporte</option>
+</select>
+    </div> 
+    
+    <div class="form-group"> <!-- apellidos -->
+        <label for="documento" class="control-label">Numero de Documento</label>
+        <input type="text" class="form-control" id="documento" name="documento" placeholder="Numero de Documento" required>
+    </div> 
+    <div class="form-group"> <!-- nombres -->
+        <label for="lic" class="control-label">Tipo de Licencia</label>
+        <select class="form-control" name="lic" id="lic" required>
+  <option value="0">Seleccione</option>
+  <option value="B1">B1</option>
+  <option value="B2">B2</option>
+  <option value="B3">B3</option>
+  <option value="C1">C1</option>
+  <option value="C2">C2</option>
+  <option value="C3">C3</option>
+</select>
+    </div>
+    
+    <div class="form-group"> <!--  -->
+        <label for="licencia" class="control-label">Numero de Licencia</label>
+        <input type="text" class="form-control" id="licencia" name="licencia" placeholder="Numero de Licencia" required>
+    </div> 
+    
+    
+    
+    <br>
+    
+    <div class="form-group"> <!-- -->
+        <label for="camion" class="control-label">Tipo de Camion</label> 
+    <select class="form-control" name="camion" id="camion" required>
+  <option value="0">Seleccione</option>
+  <option value="0">por definir</option>
+  <option value="0"></option>
+  <option value="0"></option>
+  <option value="0"></option>
+</select>
+</div> 
+    
+    
+    <div class="form-group"> <!-- -->
+        <label for="capacidad" class="control-label">Capacidad</label> 
+    <select class="form-control" name="capacidad" id="capacidad" required>
+  <option value="0">Seleccione</option>
+  <option value="0">Por definir</option>
+  <option value="0"></option>
+  <option value="0"></option>
+</select>  
+    </div>  
+
+    <div class="form-group"> <!-- -->
+        <label for="carroceria" class="control-label">Carroceria</label> 
+    <select class="form-control" name="carroceria" id="carroceria" required>
+  <option value="0">Seleccione</option>
+  <option value="0">Por definir</option>
+  <option value="0"></option>
+  <option value="0"></option>
+</select>  
+    </div>  
+
+     <div class="form-group"> <!-- -->
+        <label for="ejes" class="control-label">Cantidad de Ejes</label> 
+    <select class="form-control" name="ejes" id="ejes" required>
+  <option value="">Seleccione</option>
+  <option value="2">2</option>
+  <option value="4">4</option>
+  <option value="6">6</option>
+</select>  
+    </div>
+
+    <div class="form-group"> <!--  -->
+        <label for="placa" class="control-label">PLACAS</label>
+        <input type="text" class="form-control" id="placa" name="placa" placeholder="Placas" required>
+    </div>
+
+    <div class="form-group"> <!--  -->
+        <label for="soat" class="control-label">Vencimiento Soat</label>
+        <input type="date" class="form-control" id="soat" name="soat" placeholder="Vencimiento Soat" required>
+    </div>  
+
+    <div class="form-group"> <!--  -->
+        <label for="tecnico" class="control-label">Vencimiento Tecnicomecánica</label>
+        <input type="date" class="form-control" id="tecnico" name="tecnico" placeholder="Vencimiento Tecnicomecánica" required>
+    </div>
+
+    <div class="form-group">
+<label for="condi" class="control-label">Tarjeta de Propiedad</label>
+    <form action="leer.php" enctype="multipart/form-data" method="post">
+   <input id="archivo" accept="" name="archivo" type="file" /> 
+   <input name="MAX_FILE_SIZE" type="hidden" value="20000" /> 
+</form>
+</div>    
+
+    <div class="form-group"> <!--  -->
+        <label for="empresa" class="control-label">Empresa de Transporte</label>
+        <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Nombre Empresa" required>
+    </div>  
+
+    <div class="form-group"> <!--  -->
+        <label for="tel" class="control-label">Telefono Empresa</label>
+        <input type="text" class="form-control" id="tel" name="tel" placeholder="Telefono Empresa" required>
+    </div> 
+
+    <div class="form-group"> <!-- nombres -->
+        <label for="condi" class="control-label">Terminos y condiciones</label>
+        <input   type="checkbox" id="condiciones" name="condiciones" required >
+    </div>   
+
+
+                            
+        
+    <div class="form-group"> <!--  -->
+        <button type="submit" id="enviar" class="btn btn-primary">ENVIAR</button>
+    </div>
+    
+         
+    
+</form>
+</div>
+</body>
+</html>

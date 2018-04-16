@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Proyecto: Complete Cargo
+File: 
+Programador: Ing. Fredy Hernández
+Fecha: $date
+-->
+<html>
+
+    <head>
+        <title>Login</title>
+
+        <meta charset = "utf-8">
+        <!-- Bootstrap -->
+        <link href="css/estilos.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header-container wrapper clearfix">
+            <div class="logo-container wrapper clearfix">
+                <img class="logo" src="img/complete_logo_119x79.png" width="159" height="116">
+            </div>
+        </div>
+        <div class="form-container">
+            <div id="formulario">
+                <h2>Login de Usuarios</h2>
+
+                <form action="checklogin.php" method="post" >
+                    <div class="form-group">
+                        <br>
+                        <label class="control-label">Nombre Usuario:</label><br>
+                        <input name="username" type="text" class="form-control" id="username" required>
+                        <br><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Password:</label><br>
+                        <input name="password" type="password" class="form-control" id="password" required>
+                        <br><br>
+                    </div>
+                    <hr />
+                    <div class="form-group">
+                        <input type="submit" name="Submit" value="LOGIN" class="btn btn-primary">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+   </body>
+</html>

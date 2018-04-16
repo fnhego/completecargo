@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Proyecto: Complete Cargo
+File: 
+Programador: Ing. Fredy Hernández
+Fecha: $date
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type='text/css' >
+    </head>
+    <body>
+        <form id="formulario">
+            <div>
+                <label for="dimensiones" class="dimensiones">Dimensiones Empaque:</label>
+            </div> 
+            <div class="dim"> 
+                <div class="col-lg-3"> 
+                    <label for="alto" class="control-label">Alto en cm</label> 
+                    <input type="text" class="form-control" id="alto" name="alto" 
+                           placeholder="Alto" style="width:80px" required ></div> 
+                <div class="col-lg-3"> 
+                    <label for="ancho" class="control-label">Ancho en cm</label> 
+                    <input type="text" class="form-control" id="ancho" name="ancho" 
+                           placeholder="Ancho" style="width:80px" required></div>
+            </div> 
+            <div class="dim"> 
+                <div class="col-lg-3"> 
+                    <label for="largo" class="control-label">Largo en cm</label> 
+                    <input type="text" class="form-control" id="largo" name="largo" 
+                           placeholder="Largo" style="width:80px" required></div> 
+                <div class="col-lg-3"> 
+                    <label for="peso" class="control-label">Peso en kg</label> 
+                    <input type="text" class="form-control" id="peso" name="peso" 
+                           placeholder="Peso" style="width:80px" required></div>
+            </div> 
+            <div class="dim"> 
+                <div class="col-lg-3"> 
+                    <label for="pesovol" class="control-label">Peso Volumen</label> 
+                    <input type="text" class="form-control" id="pesovol" name="pesovol" 
+                           placeholder="Peso Volumen 1" style="width:100px" disabled></div>
+            </div>
+        </form>
+
+        <form>
+            <input id="phone" 
+                   type="tel" 
+                   name="phone" 
+                   value="+375 (__) ___-__-__" 
+                   pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" // phones at Belarus
+                   required>
+                   <button>Push</button>
+        </form>
+
+        <form>
+            <input id="phone2" 
+                   type="tel" 
+                   name="phone" 
+                   value="+375 (__) ___-__-__" 
+                   pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" 
+                   required>
+            <button>Push</button>
+        </form>
+    </body>
+</html>

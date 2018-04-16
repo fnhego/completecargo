@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--
+Proyecto: Complete Cargo
+File: 
+Programador: Ing. Fredy Hernández
+Fecha: $date
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Publicar Carga</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet">
+
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="functions.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+    </head> 
+
+    <body>
+        <div class="header-container wrapper clearfix">
+            <div class="logo-container wrapper clearfix">
+                <img class="logo" src="img/complete_logo_119x79.png" width="159" height="116">
+            </div>
+        </div>
+        <div class="form-container">
+            <div id="formulario">
+                <h2>Publicar Carga</h2>
+                <form action="publica.php" method="post">
+
+                    <div class="form-group"> <!-- nombres -->
+                        <label for="nombres" class="control-label">Nombres</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres" required>
+                    </div> 
+
+                    <div class="form-group"> <!-- apellidos -->
+                        <label for="apellidos" class="control-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                    </div> 
+                    <div class="form-group"> <!--  -->
+                        <label for="cel" class="control-label">Celular</label>
+                        <input type="text" class="form-control" id="celular" name="celular" placeholder="Celular" required>
+                    </div> 
+
+                    <div class="form-group"> <!--  -->
+                        <label for="email" class="control-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    </div> 
+
+
+
+                    <br>
+
+                    <div class="form-group"> <!-- -->
+                        <label for="departamentoo" class="control-label">Departamento de Origen</label> 
+                        <select class="form-control" name="departamentos" id="departamentos" required>
+                            <option value="">Seleccione</option>
+                        </select>
+                    </div> 
+
+
+                    <div class="form-group"> <!-- -->
+                        <label for="municipioo" class="control-label">Municipio de Origen</label> 
+                        <select class="form-control" name="municipios" id="municipios" required>
+                            <option value="">Seleccione</option>
+                        </select>  
+                    </div>  
+
+                    <script>
+
+                        $(function () {
+
+                            // Lista de deprtamentos
+                            $.post('departamentos.php').done(function (respuesta)
+                            {
+                                $('#departamentos').html(respuesta);
+                            });
+
+                            // lista de departamentos
+                            $('#departamentos').change(function ()
+                            {
+                                var el_continente = $(this).val();
+
+                                // Lista de municipios
+                                $.post('municipios.php', {continente: el_continente}).done(function (respuesta)
+                                {
+                                    $('#municipios').html(respuesta);
+                                });
+                            });
+
+                            // Lista de municipios
+                            $('#municipios').change(function ()
+                            {
+                                var municipio = $(this).children('option:selected').html();
+
+                            });
+
+                        })
+                    </script> 
+
+                    <div class="form-group"> <!--  -->
+                        <label for="direcciono" class="control-label">Direccion de Origen</label>
+                        <input type="text" class="form-control" id="direcciono" name="direcciono" placeholder="Direccion de Origen" required >
+                    </div>   
+
+                    <br>
+
+                    <div class="form-group"> <!--departamento y municipios -->
+                        <label for="departamento" class="control-label">Departamento de Destino</label> 
+                        <select class="form-control" id="departamentod" name="departamentod" required >
+                            <option value="">Seleccione</option>
+                        </select>                    
+                    </div> 
+
+                    <div class="form-group"> <!--  -->
+                        <label for="ciudadd" class="control-label">Municipio de Destino</label> 
+                        <select class="form-control" id="municipiod" name="municipiod" required>
+                            <option value="">Seleccione</option>
+                        </select>                    
+                    </div> 
+
+                    <script>
+
+                        $(function () {
+
+                            // Lista de deprtamentos
+                            $.post('departamentos.php').done(function (respuesta)
+                            {
+                                $('#departamentod').html(respuesta);
+                            });
+
+                            // lista de departamentos
+                            $('#departamentod').change(function ()
+                            {
+                                var el_continente = $(this).val();
+
+                                // Lista de municipios
+                                $.post('municipios.php', {continente: el_continente}).done(function (respuesta)
+                                {
+                                    $('#municipiod').html(respuesta);
+                                });
+                            });
+
+                            // Lista de municipios
+                            $('#municipiod').change(function ()
+                            {
+                                var mun = $(this).children('option:selected').html();
+                            });
+
+                        })
+                    </script> 
+                    <div class="form-group"> <!--  -->
+                        <label for="direcciond" class="control-label">Direccion de Destino</label>
+                        <input type="text" class="form-control" id="direcciond" name="direcciond" placeholder="Direccion de Destino" required >
+                    </div>   
+
+                    <br> 
+
+                    <div class="form-group"> <!--  -->
+                        <label for="carga" class="control-label">Tipo de carga</label>
+                        <select class="form-control" id="carga" name="carga" required>
+                            <option value="">Seleccione</option>
+                            <option value="PERECEDEROS">Perecederos</option>
+                            <option value="MATERIALES PELIGROSOS">Materiales Peligrosos</option>
+                            <option value="VEHICULOS">Vehiculos</option>
+                            <option value="MATERIALES DE CONSTRUCCION">Materiales de Construccion</option>
+                            <option value="INDUSTRIA DE CONSUMO DE ALIMENTOS">Industria de Consumo de Alimentos </option>
+                            <option value="INDUSTRIA DE GANADERIA Y AGRICULTURA">Industria de Ganaderia Y Agricultura</option>
+                            <option value="MUDANZAS">Mudanzas</option>
+                            <option value="PAQUETERIA">Paqueteria</option>
+                            <option value="OTRO">Otro</option>
+                        </select>                    
+                    </div>
+
+
+                    <div class="form-group"> <!--  -->
+
+                        <label for="dimensiones" class="control-label">Dimensiones:</label>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-3"><label for="alto" class="control-label">Alto en cm</label>
+                                <input type="text" class="form-control" id="alto" name="alto" placeholder="Alto" style="width:35%" required ></div>
+                            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-3"><label for="ancho" class="control-label">Ancho en cm</label>
+                                <input type="text" class="form-control" id="ancho" name="ancho" placeholder="Ancho" style="width:35%" required ></div>
+
+                            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-3"><label for="largo" class="control-label">Largo en cm</label>
+                                <input type="text" class="form-control" id="largo" name="largo" placeholder="Largo" style="width:35%" required ></div>
+
+                            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-3"><label for="peso" class="control-label">Peso en kg</label>
+                                <input type="text" class="form-control" id="peso" name="peso" placeholder="Peso" style="width:35%" required></div>
+
+
+                        </div>           
+                    </div>
+
+                    <br>
+
+                    <div class="form-group"> <!--  -->
+
+                        <label for="carga" class="control-label">Carga:</label>
+                        <br>         
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><label for="cargue" class="control-label">¿Libre de cargue?</label> 
+                                <select class="form-control" id="cargue" name="cargue" style="width:35%" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="SI">Si</option>
+                                    <option value="NO">No</option>
+                                </select> </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><label for="montacargas" class="control-label">¿Requiere Montacargas?</label> 
+                                <select class="form-control" id="montacargas" name="montacargas" style="width:35%" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="SI">Si</option>
+                                    <option value="NO">No</option>
+                                </select> </div>            
+
+                        </div>           
+                    </div>
+                    <br>
+
+                    <div class="form-group"> <!--  -->
+
+                        <label for="carga" class="control-label">Descarga:</label>
+                        <br>         
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><label for="cargue" class="control-label">¡Libre de Descargue?</label> 
+                                <select class="form-control" id="descargue" name="descargue" style="width:35%" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="SI">Si</option>
+                                    <option value="NO">No</option>
+                                </select> </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <label for="montacargasd" class="control-label">¿Requiere Montadescargas?</label> 
+                                <select class="form-control" id="montacargasd" name="montacargasd" style="width:35%" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="SI">Si</option>
+                                    <option value="NO">No</option>
+                                </select> </div>            
+
+                        </div>           
+                    </div>
+                    <div class="form-group"> <!-- nombres -->
+                        <label for="detalles" class="control-label">Detalles Adicionales</label>
+                        <input style="height:80px;" type="text" class="form-control" id="detalles" name="detalles" placeholder="" >
+                    </div> 
+
+                    <div class="form-group"> <!-- nombres -->
+                        <label for="condi" class="control-label">Terminos y condiciones</label>
+                        <input   type="checkbox" id="condiciones" name="condiciones" required >
+                    </div> 
+                    <div class="form-group"> <!--  -->
+                        <button type="submit" id="enviar" name="enviar" value="enviar" class="btn btn-primary">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

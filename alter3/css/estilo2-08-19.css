@@ -1,0 +1,548 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-jul-2017, 23:38:42
+    Author     : fredy.hernandez
+*/
+img, botones
+{
+    vertical-align: middle;
+}
+html  {
+
+   /* overflow-x:hidden;*/
+}
+body{
+    
+}
+body {
+    font-family:'Oswald',Arial, Helvetica, sans-serif;
+    max-width: 1400px;
+    min-width: 400px;
+    /*font: 16px/26px Helvetica, Helvetica Neue, Arial;*/
+    width: 100%;
+    padding:2px;
+}
+.wrapper {
+    /*width: 1140px; /* 1140px - 5% for margins */
+    margin: 0px auto;
+    width: 98%;
+}
+.header-container{
+    /*overflow: auto;*/
+    border: solid 2px #000;
+}
+.central-container img{
+    border: solid 2px #000;
+}
+.botones{
+    border: solid 2px #000;
+    padding: 5%;
+   /* position: relative;*/
+   /* float: right;*/
+   max-width: 1140px;
+   height: auto;
+    border: solid 4px #000;
+    background-image: url("img/fondo_blue.jpg");
+   /* background-color: blue;*/
+}
+.botones a{
+    background-color: blue;
+    border-style: groove;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0.5em;
+    opacity: 0.5;
+    border-radius: 0.5em;
+}
+.fondo{
+    float: left;
+    border: solid 2px #000;
+}
+.fondo img{
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+
+h1  {
+    color: #000;
+    font-weight: bold;
+}
+p#p1, p2, p3, p4 {
+    text-align: center;
+}
+p#p1{
+    /*border: solid 0px #000;*/
+    width: 70%;
+    position: absolute;
+    float: inside;
+    right: 5%;
+    color: #fff;
+}
+a{
+    text-decoration:none;
+}
+section{
+    padding: 2%;
+    text-align: justify;
+}
+section#section{
+    background-color: #F2F2F2;
+}
+.cuerpo{
+    /*border: solid 0px #ccc;*/
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div#text{
+    text-align: center;
+
+}
+
+div#main {
+    max-width:100%;
+    height: auto;
+    z-index: -1;
+    
+}
+
+.central{
+    width: 98%;
+}
+.central div{
+    padding: 1%;
+}
+
+.central div h1{
+    text-align: center; 
+}
+.central div p{
+    text-align: justify;
+}
+nav a:hover,
+nav a:visited { /*visited para que no cambie el color*/
+    color: black;
+}
+.top-nav li.active a, .top-nav li a:hover {
+    color:#FFFFFF;
+    background:blue; /*#00B895*/
+}
+.footer{
+    background-color: #F2F2F2;
+    font-weight: bold;
+    color: #215968;
+    width: 100%;
+}
+.lista li a{
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 500px) {
+    p#p1{
+        font-size: 1em;
+        line-height: 1.8em;
+    }
+    .top-nav ul li{
+        display:block;
+        text-align: center;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    a {
+        width: 100%;
+        text-decoration:none;
+    }
+    .header-text{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 0px;
+        text-align: center;
+    }
+    .botones{
+        /*display: block;*/
+        position: relative;
+        top: -7em; 
+        left: 0em;
+        z-index: 1;
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .wrapper {
+        /*width: 1140px; /* 1140px - 5% for margins */
+        margin: 0px auto;
+    }
+    p#p1{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .header-container{
+        /*overflow: auto;*/
+        display:inline-block;
+    }
+    .logo-container{
+        /* border: solid 2px brown;*/
+        float: left;
+        /* height: 180px;*/
+        width: auto;
+        z-index: 0;
+        /*width: 160px;*/
+    }
+    .logo{
+        height: 80px;
+        width: auto;
+    }
+    .top-nav{
+        /* border: solid blue;*/
+        float: right;
+        margin: 0px;
+        z-index: 1;
+        overflow: hidden;
+        /*max-height: 180px;*/
+    }
+    .top-vav nav{
+        z-index: 2;
+        /* border: solid yellow;*/
+        overflow: hidden;
+    }
+    .top-nav ul li{
+        display:inline-block;
+    }
+    .top-nav ul li a{
+        padding: 2px ; /*Margenes*/
+        position: relative; 
+        top:20px;
+        -webkit-transition: 0.5s ease;
+        font-size: 1em;
+        font-weight: bold;
+        position:relative;
+    }
+    .header-text{
+        /*border: solid cyan;*/
+        font-size: 1.1em;
+        font-weight: bold;
+        float: right;
+        padding: 0px;
+        margin: 15px;
+    }
+    .botones{
+        display: block;
+        position: relative;
+        top: -10em; 
+        left: 0em;
+        z-index: 1;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        /*width: 1140px; /* 1140px - 5% for margins */
+        margin: 0px auto;
+    }
+    p#p1{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .header-container {
+        overflow: hidden;
+        margin: 2%;
+    }
+    .logo-container{
+        /* border: solid 2px brown;*/
+        float: left;
+        /* height: 180px;*/
+        width: auto;
+        z-index: 0;
+        /*width: 160px;*/
+    }
+    .logo{
+        height: auto;
+        width: auto;
+    }
+    .top-nav{
+        /* border: solid blue;*/
+        float: right;
+        margin: 0px;
+        z-index: 1;
+        /*max-height: 180px;*/
+
+    }
+    .top-vav nav{
+        z-index: 2;
+        /* border: solid yellow;*/
+        /*   overflow: hidden;*/
+    }
+    .top-nav ul li{
+        display:inline-block;
+    }
+    .top-nav ul li a{
+        padding: 2px ; /*Margenes*/
+        position: relative; 
+        top:10px;
+        -webkit-transition: 0.5s ease;
+        font-size: 1.3em;
+        font-weight: bold;
+        position:relative;
+    }
+    .header-text{
+        /*border: solid cyan;*/
+        font-size: 1.2em;
+        font-weight: bold;
+        float: right;
+        padding: 0px;
+        margin: 15px;
+    }
+    .botones{
+        display: block;
+        position: relative;
+        top: -9em; 
+        left: 0em;
+        z-index: 1;
+    }
+
+
+}
+@media only screen and (min-width: 850px) {
+
+    /* ====================
+        WIDE: CSS3 Effects
+       ==================== */
+    .wrapper {
+        /*width: 1140px; /* 1140px - 5% for margins */
+        margin: 0px auto;
+    }
+    .header-container {
+        overflow: hidden;
+        margin: 2%;
+    }
+    .logo-container{
+        /* border: solid 2px brown;*/
+        float: left;
+        height: 180px;
+        width: 250px;
+        /*width: 160px;*/
+    }
+    .logo-container div{
+        height: 184px; 
+        max-width:  250px;
+    }
+    .logo{
+        height: 180px;
+        width: auto;
+    }
+    .top-nav{
+        /* border: solid blue;*/
+        float: right;
+        max-height: 180px;
+
+    }
+    .top-vav nav{
+        /* border: solid yellow;*/
+        overflow: hidden;
+    }
+    .top-nav ul li{
+        display:inline-block;
+    }
+    .top-nav ul li a{
+        padding: 10px; /*Margenes*/
+        -webkit-transition: 0.5s ease;
+        font-size: 1.5em;
+        font-weight: bold;
+        position:relative;
+    }
+
+    .header-text{
+        /* border: solid cyan;*/
+        font-size: 1.5em;
+        font-weight: bold;
+        float: right;
+        padding: 0px;
+    }
+
+    p#p1{
+
+        font-size: 2.5em;
+        line-height: 1.5em; 
+    }
+    .footer div{
+        padding: 5%;
+        width: 98%;
+        font-size: 1em;
+        align-content: center;
+    }
+    .botones{
+        display: block;
+        position: relative;
+       /* top: -15em; 
+        left: 0em;*/
+        z-index: 1;
+    }
+    .botones a{
+        font-size: 1.5em ;
+    }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+    /* ===============
+         Maximal Width
+      =============== */
+
+    .header-container {
+        overflow: hidden;
+        margin: 2%;
+    }
+    .logo-container{
+        /*border: solid 2px brown;*/
+        float: left;
+        height: 180px;
+        width: 250px;
+        /*width: 160px;*/
+
+    }
+    .logo-container div{
+        height: 184px; 
+        max-width:  250px;
+    }
+    .logo{
+        height: 180px;
+        width: auto;
+    }
+    .top-nav{
+        /* border: solid blue;*/
+        float: right;
+        overflow: hidden;
+        /*max-height: 180px;*/
+
+    }
+    .top-vav nav{
+        overflow: hidden;
+    }
+    /* Crea botones de seleccion fondo naranja*/
+    /*a {
+         display: inline-block;
+         margin-bottom: 0px;
+         padding: 10px;
+         text-align: center;
+         text-decoration: none;
+         font-weight: bold;
+         color: black;
+         background: #777777;
+     }*/
+    .top-nav ul li{
+        display:inline-block; /*Muestra el menu horizontal*/
+        vertical-align: middle;
+    }
+    .top-nav ul li a{
+        padding: 20px ; /*Margenes*/
+        position: relative; 
+        top:20px;
+        -webkit-transition: 0.5s ease;
+        font-size: 2em;
+        font-weight: bold;
+        position:relative;
+    }
+
+    .header-text{
+        /*border: solid cyan;*/
+        font-size: 2em;
+        font-weight: bold;
+        float: right;
+        padding: 0px;
+        margin: 15px;
+    };
+    p#p1{
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+
+    .central div{
+        width: 22%;
+        display: inline-block;
+    }
+    .botones{
+        border: 4px black;
+        display: block;
+        width: auto;
+        position: relative;
+        top: 0em; 
+        left: 0em;
+        z-index: 1;
+        font-size: 2em;
+    }
+    .botones a{
+        font-size: 1em ;
+
+    }
+    .footer div{
+        padding: 2%;
+        width: 44%;
+        display: inline-block;
+        font-size: 1em;
+    }
+
+    img#main{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0000);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+

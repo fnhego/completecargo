@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Proyecto: Complete Cargo
+File: 
+Programador: Ing. Fredy Hernández
+Fecha: $date
+-->
+<html>
+
+    <head>
+        <title>Contáctenos</title>
+
+        <meta charset = "utf-8">
+        <!-- Bootstrap -->
+        <link href="css/estilos.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header-container wrapper clearfix">
+            <div class="logo-container wrapper clearfix">
+                <img class="logo" src="img/complete_logo_119x79.png" width="159" height="116">
+            </div>
+        </div>
+        <div class="form-container">
+            <div id="formulario">
+                <h2>Contáctenos</h2>
+                <form action="" method="post" >
+                    <div class="form-group">
+                        <label class="control-label">Nombres:</label><br>
+                        <input name="nombres" type="text" class="form-control" id="nombres" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Apellidos:</label><br>
+                        <input name="apellidos" type="text" class="form-control" id="apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">E-Mail:</label><br>
+                        <input name="email" type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Teléfono:</label><br>
+                        <input name="tel" type="tel" class="form-control" id="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Asunto:</label><br>
+                        <input name="asunto" type="text" class="form-control" id="asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Mensaje:</label><br>
+                        <textarea name="comentarios" rows="10" cols="50" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="Submit" value="Enviar" class="btn btn-primary">
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

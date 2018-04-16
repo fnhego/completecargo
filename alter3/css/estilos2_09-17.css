@@ -1,0 +1,64 @@
+.form-container{
+    width: 97%;
+    margin: 0px auto;
+    height: 600px;/*561*/
+    background-image: url("../img/fondo_blue.jpg");
+    background-size:  cover ;
+    /*text-align: center;*/
+    z-index: -1;
+}
+
+#formulario {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#FFFFFF;/*#F0EFEF*/
+    padding: 10px 30px;
+    border-radius: 6px;
+    border:thin #C1C1C1;
+    color: black;
+    /* position: relative;
+     top: 0px;*/
+    opacity:0.8;
+}
+.form-group{
+    width: 60%;
+    margin: 0px auto;
+}
+
+h2{
+    text-align: center;
+}
+input:invalid {
+    border: 1px solid red;
+}
+select:invalid {
+    border: 1px solid red;
+}
+.wrapper {
+    /*width: 1140px; /* 1140px - 5% for margins */
+    margin: 0px auto;
+    width: 97%;
+}
+.header-container {
+    /*border: solid 2px brown;*/
+    width: 97%; 
+    /* height: 78px;*/
+    /*vertical-align: middle;*/
+    z-index:100;
+}
+.logo-container{
+    /*border: solid 2px brown;*/
+    float: left;
+    width: 18%;
+}
+.logo{
+    height: 78px;
+    width: 107px;
+}
+#mensaje{
+    height: 100px;
+    text-align: left;
+    vertical-align: top;
+     margin: 0px;
+}

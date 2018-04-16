@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+Proyecto: Complete Cargo
+File: 
+Programador: Ing. Fredy Hernández
+Fecha: $date
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/estiloformulario.css" />
+    </head>
+    <body>
+        <div>
+            <header>
+                <table id="header">
+                    <tr>
+                        <td id="headercontainer">
+                            <div id="logocontainer">
+                                <img id="logo" src="../img/complete_logo_119x79.png" width="119" height="79">
+                            </div>
+                        </td>
+                        <td id="labelcontainer">
+                            <div id="menu">
+                                <nav>
+                                    <ul>
+                                        <!--   <li><a href="#"><strong>Aprende con Nosotros</strong></a></li>
+                                           <li><a href="formularios/formularioregistro.html"><strong>Registro</strong></a></li>
+                                           <li><a href="#"><strong>Entrar al Sistema</strong></a></li>
+                                           <li><a href="#"><strong>Contacto</a></li> -->
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div id="label">
+                                <!-- <p id="rotulo">Tenemos el espacio para su carga</p>-->
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+            </header>
+        </div>
+        <div id="formulario">
+            <h1>Formulario de Registro</h1>
+            <form name="formulario" action="index.php" method="POST">
+                <table id="formulario" align="center">
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Usuario" name="usuario" size="20">
+                        </td>
+                        <td>
+                            <input type="password" placeholder="Contraseña" name="password" size="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Nombres" name="nombres" size="20">
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Apellidos" name="apellidos" size="20"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Email" name="email" size="20"> 
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Celular" name="celular" size="20"> 
+                        </td>
+                    </tr>
+                    <tr>
+                    <label>
+                        <td>
+                            <input type="text" placeholder="Dirección" name="dirección" size="20"> 
+                        </td>
+                    </label>
+                    </tr>
+                    <tr>
+                    <label>
+                        <td>
+                            <input type="text" placeholder="Ciudad" name="ciudad" size="20"> 
+                        </td>
+                    </label>
+                    </tr>
+                    <tr>
+                    <label>
+                        <td>
+                            <input type="text" placeholder="Departamento" name="departamento" size="20"> 
+                        </td>
+                    </label>
+                    </tr>
+                    <tr>
+                    <label>
+                        <td>
+                            <SELECT type="text" value="Tipo de Documento" name="documento" >
+                                <OPTION VALUE="Cédula">Cédula</OPTION>
+                                <OPTION VALUE="Nit">NIT</OPTION>
+                                <OPTION VALUE="Cédula de Extranjeria">Cédula de Extranjería</OPTION>
+                                <OPTION VALUE="Pasaporte">Pasaporte</OPTION>
+                            </select>
+                        </td>
+                    </label>
+                    </tr>
+                    <tr>
+                    <label>
+                        <td>
+                            <input type="text" placeholder="Número de Documento" name="documento" size="20">
+                        </td>
+                    </label>
+                    </tr>
+                    <tr>
+                    <label>
+                        <td>
+                            Acepto los Términos:  
+                        </td>
+                        <td>
+                            <input type="radio" placeholder="Acepto los Términos" name="aceptaterm" 
+                                   value="1"> 
+                        </td>
+                    </label>
+                    </tr>
+                    <tr>
+                    <label>
+                        <td>
+                            <input type="submit" placeholder="Enviar" name="enviar" style="font-size:100%" />    
+                        </td>
+                        <td>
+                            <input type="submit" placeholder="Borrar" name="borrar" style="font-size:100%" />    
+                        </td>
+                    </label>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
